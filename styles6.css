@@ -1,0 +1,31 @@
+.sidebar {
+    float: left;
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-right: 2px solid #ccc;
+    height: 300px;
+}
+
+.main-content {
+    float: right;
+    width: 70%;
+    padding: 15px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    border: 1px solid #999;
+    overflow: auto;
+    margin-bottom: 20px;
+}

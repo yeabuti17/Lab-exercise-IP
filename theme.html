@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Theme Switcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog Platform</h1>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </header>
+
+        <main>
+            <article>
+                <h2>Blog Post Title</h2>
+                <p>This is a sample blog post. The theme can be switched between light and dark modes using CSS variables and JavaScript.</p>
+                <p>CSS custom properties (variables) allow us to define reusable values that can be changed dynamically.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2023 Blog Platform</p>
+        </footer>
+    </div>
+
+    <script>
+        // JavaScript to toggle dark mode
+        const toggleButton = document.getElementById('theme-toggle');
+
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+
+            // Update button text
+            if (document.body.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Toggle Light Mode';
+            } else {
+                toggleButton.textContent = 'Toggle Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>

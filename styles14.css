@@ -1,0 +1,74 @@
+/* Define CSS variables for light mode (default) in :root */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #4a6fa5;
+    --secondary-color: #f0f0f0;
+    --button-color: #4a6fa5;
+    --button-text: #ffffff;
+}
+
+/* Dark mode variables - activated by .dark-mode class on body */
+.dark-mode {
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --primary-color: #6d9dc5;
+    --secondary-color: #2d2d2d;
+    --button-color: #6d9dc5;
+    --button-text: #1a1a1a;
+}
+
+/* Apply variables using var() function */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+article {
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--primary-color);
+    text-align: center;
+    color: var(--primary-color);
+}

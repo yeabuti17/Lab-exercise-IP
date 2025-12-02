@@ -1,0 +1,36 @@
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 60px;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
