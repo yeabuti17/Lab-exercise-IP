@@ -1,0 +1,17 @@
+p {
+    font-family: 'Merriweather', serif;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    color: #333;
+    text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    padding: 0 15px;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #222;
+    margin-top: 30px;
+}
